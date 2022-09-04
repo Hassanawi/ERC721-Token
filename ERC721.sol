@@ -12,7 +12,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract IEC is ERC721, Ownable {
 
-    /* @notice publicSale stores the the public sale is active or not
+    /* @notice publicSale stores bool to check whether the public sale is active or not
      */
 
     bool public publicSale;
