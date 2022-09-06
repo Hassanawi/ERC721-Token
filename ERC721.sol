@@ -34,12 +34,12 @@ contract IEC is ERC721, Ownable {
     }
 
 
-    /* @dev safeMint mints the IEC NFT
+    /* @dev mint mints the IEC NFT
      * @dev require publicSale to be active to mint the NFT
      * @param to is the address on which the nft is minted on 
      * @param tokenId is the is the id of erc721 to be minted
      */
-    function safeMint(address to, uint256 tokenId) public  {
+    function mint(address to, uint256 tokenId) public  {
         require( publicSale == true, "public Sale is not activated");
         _safeMint(to, tokenId);
     }
